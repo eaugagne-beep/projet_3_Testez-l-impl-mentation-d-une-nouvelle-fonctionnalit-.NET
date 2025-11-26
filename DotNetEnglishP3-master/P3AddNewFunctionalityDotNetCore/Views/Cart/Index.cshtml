@@ -16,9 +16,9 @@
             <tr>
                 <td class="text-center">@line.Quantity</td>
                 <td class="text-start">@line.Product.Name</td>
-                <td class="text-end">@line.Product.Price.ToString("c")</td>
+                <td class="text-end">@line.Product.Price.ToString("0.00 €")</td> <!ajout_symbole_euro>
                 <td class="text-end">
-                    @((line.Quantity * line.Product.Price).ToString("c"))
+                    @((line.Quantity * line.Product.Price).ToString("0.00 €")) <!ajout_symbole_euro>
                 </td>
                 <td>
                     <form asp-action="RemoveFromCart" method="post">
@@ -36,13 +36,13 @@
         <tr>
             <td colspan="3" class="text-end">@Localizer["Total"]:</td>
             <td class="text-end">
-                @Model.GetTotalValue().ToString("c")
+                @Model.GetTotalValue().ToString("0.00 €") <!ajout_symbole_euro>
             </td>
         </tr>
         <tr>
             <td colspan="3" class="text-end">@Localizer["Average"]:</td>
             <td class="text-end">
-                @Model.GetAverageValue().ToString("c")
+                @Model.GetAverageValue().ToString("0.00 €") <!ajout_symbole_euro>
             </td>
         </tr>
     </tfoot>
