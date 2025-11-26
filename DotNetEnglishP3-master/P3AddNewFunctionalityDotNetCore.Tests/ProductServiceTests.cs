@@ -9,11 +9,7 @@ namespace P3AddNewFunctionalityDotNetCore.Tests
 {
     public class ProductServiceTests
     {
-        /// <summary>
-        /// Take this test method as a template to write your test method.
-        /// A test method must check if a definite method does its job:
-        /// returns an expected value from a particular set of parameters
-        /// </summary>
+        
 
 
         //Méthode pour créer un mock de IStringLocalizer<ProductService>
@@ -174,6 +170,6 @@ namespace P3AddNewFunctionalityDotNetCore.Tests
 
 
 
-        // TODO write test methods to ensure a correct coverage of all possibilities
+      
     }
 }

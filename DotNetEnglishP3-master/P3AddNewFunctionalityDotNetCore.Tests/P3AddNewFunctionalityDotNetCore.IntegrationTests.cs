@@ -85,6 +85,9 @@ public class ProductIntegrationWithMoqTests
         Assert.Contains(list, p => p.Name == "Ordinateur");
     }
 
+
+
+    // Supprimer un produit
     [Fact]
     public void SQL_DeleteProduct_Should_Disappear_From_Client_List()
     {
